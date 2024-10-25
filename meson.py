@@ -39,7 +39,7 @@ if __name__ == "__main__":
     preconfigure.run(own_meson=True)
 
     # Add paths for meson and ninja to environment
-    os.environ["NINJA"] = sys.path[0] + os.path.sep +  + "externals" + os.path.sep + "ninja"
+    os.environ["NINJA"] = sys.path[0] + os.path.sep + "externals" + os.path.sep + "ninja"
     if os.name == "nt":
         os.environ["NINJA"] = os.environ["NINJA"] + ".exe"
     if os.path.exists(
