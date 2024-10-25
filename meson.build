@@ -13,7 +13,7 @@ if not fsmod.exists('su2preconfig.timestamp')
 endif
 
 pymod = import('python')
-python = pymod.find_installation()
+python = pymod.find_installation('python3.11')
 
 su2_cpp_args = []
 su2_deps     = [declare_dependency(include_directories: 'externals/CLI11')]
